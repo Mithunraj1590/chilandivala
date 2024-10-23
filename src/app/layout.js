@@ -1,5 +1,8 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "../styles/common.scss"
+import Header from "@/components/Header";
+import SmoothScroller from "@/common/SmoothScroller";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,9 +23,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+            <SmoothScroller>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header />
         {children}
+        <Footer/>
       </body>
+            </SmoothScroller>
     </html>
   );
 }

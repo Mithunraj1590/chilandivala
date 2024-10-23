@@ -1,0 +1,91 @@
+@import "../../styles/util";
+.homeabout {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .webshape{
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        img{
+            opacity: .1;
+        }
+
+    }
+
+    &_img {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .text {
+            max-width: 80%;
+            p{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .title{
+                font-size: 70px;
+                font-weight: 700;
+                color: $primary;
+            }
+        }
+        .shape{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            z-index: -1;
+            padding-right: 30px;
+        }
+
+        figure {
+            position: relative;
+            width: 430px;
+            height: 570px;
+            border-radius: 45rem;
+            overflow: hidden;
+        }
+        .vector{
+            position: absolute;
+            left: 0;
+            width: 128px;
+            height: 128px;
+            bottom: 0;
+            z-index: 11;
+            background-color: #9BE481;
+            border-radius: 100%;
+   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                animation: modalRotate 10s linear infinite;
+            }
+            .play{
+                
+            }
+        }
+    }
+    &_content{
+        p{
+            font-size: 20px;
+        }
+        a{
+           margin-top: 40px;
+        }
+    }
+}
+
+@keyframes modalRotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform:rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform:rotate(360deg);
+    }
+  }
