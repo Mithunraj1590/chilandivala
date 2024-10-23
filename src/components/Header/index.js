@@ -38,7 +38,7 @@ export default function Header() {
         <>
         <header ref={header} className={styles.header}>
             <div className={styles.logo}>
-                <Image src="/image/logo/logo.png" fill/>
+                <Image src="/images/logo/logo.png" fill/>
             </div>
             <div className={styles.nav}>
                 <Magnetic>
