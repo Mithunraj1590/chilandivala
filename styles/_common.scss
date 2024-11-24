@@ -141,6 +141,9 @@
   margin: 0 -15px;
 }
 @media screen and (max-width: 800px) {
+  .canvas{
+    pointer-events: none;
+  }
   .slick-arrow .next {
     top: 0;
     right: 0;

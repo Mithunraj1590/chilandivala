@@ -1,5 +1,5 @@
 import React from "react"
-import { TitleSm } from "./common/Title"
+import { Title, TitleSm } from "./common/Title"
 import Link from "next/link"
 import { testimonial } from "@/assets/data/dummydata"
 import { HiOutlineArrowRight } from "react-icons/hi"
@@ -56,7 +56,7 @@ const Testimonial = () => {
       <section className='testimonial'>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='WHAT CLIENTS SAY ABOUT OUR WORK' />
+            <Title title='WHAT CLIENTS SAY ABOUT OUR WORK' />
           </div>
           <div className='cards'>
             <Slider {...settings}>

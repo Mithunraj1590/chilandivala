@@ -81,9 +81,9 @@ const ThreeDModel = () => {
     controls.enableDamping = true;  // Smooth camera movement
     controls.dampingFactor = 0.25;  // Control the damping effect
     controls.screenSpacePanning = false;  // Limit panning to the screen space
-    controls.enableZoom = false;  // Disable zooming with mouse scroll
-    controls.enableRotate = true;  // Allow rotation with mouse movement
-    controls.enablePan = true; // Allow panning (if desired)
+    controls.enableZoom = false;  // Disable zooming (including pinch-zoom and scroll zoom)
+    controls.enableRotate = false;  // Allow rotation with mouse movement
+    controls.enablePan = false; // Disable panning (optional)
 
     // Animation Loop
     const clock = new THREE.Clock();
@@ -116,22 +116,22 @@ const ThreeDModel = () => {
   }, []);
 
   return (
-    <div      style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      zIndex: 1,
-      overflow:"hidden"
-    
-    }}>
-
+    <div
+     className="canvas"
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        zIndex: 1,
+        overflow: "hidden",
+      }}
+    >
       <canvas
         ref={canvasRef}
         style={{
           background: "transparent",
-        
         }}
       />
     </div>

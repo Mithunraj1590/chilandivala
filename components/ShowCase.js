@@ -18,7 +18,7 @@ const ShowCase = () => {
               <Card data={item} key={item.id} />
             ))}
           </div>
-          <div className='card links'>
+          <div className='card links text-center'>
             <Link href='/'>
               VIEW ALL CASES <HiOutlineArrowRight className='link-icon' />
             </Link>

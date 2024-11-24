@@ -163,7 +163,7 @@
     }
   }
   .links {
-    @include flex(none, flex-end, none);
+    @include flex(none, center, none);
   }
 }
 
@@ -372,6 +372,12 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  .hero{
+    .hero-title{
+      font-size: 55px;
+      line-height: 60px
+    }
+  }
   .banner {
     .container {
       @include flex(center, none, column);
