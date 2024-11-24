@@ -116,19 +116,25 @@ const ThreeDModel = () => {
   }, []);
 
   return (
-    <canvas
-      ref={canvasRef}
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: 1,
-        background: "transparent",
-      
-      }}
-    />
+    <div      style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      zIndex: 1,
+      overflow:"hidden"
+    
+    }}>
+
+      <canvas
+        ref={canvasRef}
+        style={{
+          background: "transparent",
+        
+        }}
+      />
+    </div>
   );
 };
 
