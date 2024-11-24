@@ -10,13 +10,13 @@ export const Card = ({ data, caption, show, path }) => {
           <img src={data.cover} alt={data.title} />
         </div>
         <div className='card-details'>
-          <Link href={`${path}/${data.id}`} className='title-link stretched-link'>
+         
             <TitleSm title={data.title} />
-          </Link>
+        
           {caption && (
-            <p>
+            <Link href="/blogs/">
               {caption} <HiOutlineArrowRight className='link-icon' />
-            </p>
+            </Link>
           )}
           <div className='flex'>
             <span> {data.catgeory} </span> {data.date && <span> / {data.date}</span>}

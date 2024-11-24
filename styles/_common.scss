@@ -71,12 +71,10 @@
   }
 }
 .card {
+  position: relative;
   h1 {
     transition: 0.5s;
-    &:hover {
-      color: $green;
-      cursor: pointer;
-    }
+   
   }
   .card-img {
     margin-bottom: 30px;
@@ -126,7 +124,7 @@
   top: 45%;
   width: 50px;
   height: 50px;
-  background-color: $indigo;
+  background-color: $green;
   z-index: 1;
   border-radius: 50%;
   @include flex(center, center, none);
@@ -158,16 +156,15 @@
 }
 
 
-.stretched-link{
-  &::before{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: auto;
-    content: "";
-    background-color: rgba(0, 0, 0, 0);
+
+
+a{
+  svg{
+  transition: all .3s ease-in-out;
+  }
+  &:hover{
+    svg{
+      transform: translateX(10px);
+    }
   }
 }

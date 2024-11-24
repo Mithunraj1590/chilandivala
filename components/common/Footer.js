@@ -20,11 +20,11 @@ const Footer = () => {
               <br />
               <br />
               <span>
-                Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
+                Questions?  Reach us <br /> Monday – Friday from 9 am to 6 pm
               </span>
               <br />
               <br />
-              <h3>+1 001 234 5678</h3>
+              <h3>+91 xxx xxx xxxx</h3>
               <br />
               <button className='button-primary'>Request for quote</button>
             </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Link href='/showcase'>Showcase</Link>
               </li>
               <li>
-                <Link href='/blog'>Blog</Link>
+                <Link href='/blogs'>Blog</Link>
               </li>
              
               <li>
