@@ -11,29 +11,45 @@ const Header = () => {
   const [open, setOpen] = useState(false)
 
   const router = useRouter()
+
   useEffect(() => {
     setActiveLink(router.pathname)
-  }, [router.pathname])
+
+    // Add or remove class to body based on the menu state
+    if (open) {
+      document.body.classList.add('menu-open');
+      document.documentElement.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+      document.documentElement.classList.remove('menu-open');
+    }
+
+    // Cleanup function to remove the class when the component unmounts
+    return () => {
+      document.body.classList.remove('menu-open');
+    }
+  }, [router.pathname, open])
+
   return (
     <>
       <header>
         <div className='container'>
           <div className='logo'>
             <Link href='/'>
-             <Image
-             src="/images/logo.png"
-             width={250}
-             height={56}
-             alt="logo"
-             />
+              <Image
+                src="/images/logo.png"
+                width={250}
+                height={56}
+                alt="logo"
+              />
             </Link>
           </div>
-          <nav className={open ? "openMenu" : "closeMenu"} onClick={() => setOpen(null)}>
+          <nav className={open ? "openMenu" : "closeMenu"} onClick={() => setOpen(false)}>
             <Link href='/' className={activeLink == "/" ? "activeLink" : "none"}>
               Home
             </Link>
             <Link href='/agency' className={activeLink == "/agency" ? "activeLink" : "none"}>
-             About
+              About
             </Link>
             <Link href='/services' className={activeLink == "/services" ? "activeLink" : "none"}>
               Services
@@ -46,7 +62,9 @@ const Header = () => {
             </Link>
             <button className='button-primary'>book a consultation</button>
           </nav>
-          {/* <button onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button> */}
+          <button onClick={() => setOpen(!open)}>
+            {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
+          </button>
         </div>
       </header>
     </>

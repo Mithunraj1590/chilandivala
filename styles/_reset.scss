@@ -11,6 +11,12 @@ body {
   // overflow: hidden;
 }
 
+body.menu-open, html.menu-open {
+  height: 100vh;
+  overflow: hidden;  /* Prevent scrolling when the menu is open */
+}
+
+
 .container {
   max-width: 90%;
   margin: auto;
