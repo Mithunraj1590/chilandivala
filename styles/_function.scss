@@ -27,7 +27,7 @@
   .grid-6,
   .grid-4,
   .grid-3 {
-    @include grid(repeat(2, 1fr), 50px);
+    @include grid(repeat(2, 1fr), 30px);
   }
 }
 

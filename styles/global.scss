@@ -437,4 +437,19 @@ footer {
       flex-direction: column;
     }
   }
+  footer{
+    .connect{
+      flex-wrap: wrap;
+      justify-content: center;
+    row-gap: 10px;
+      span{
+        &:nth-child(2){
+          display: none;
+        }
+      }
+      .text{
+        text-align: center;
+      }
+    }
+  }
 }

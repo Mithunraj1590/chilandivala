@@ -63,3 +63,10 @@ ul {
   text-decoration: none;
   list-style-type: none;
 }
+
+@media screen and (max-width: 800px) {
+  .py{
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}

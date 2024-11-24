@@ -141,20 +141,24 @@
   margin: 0 -15px;
 }
 @media screen and (max-width: 800px) {
+  section{
+    padding-bottom: 30px;
+  }
   .canvas{
     pointer-events: none;
   }
   .slick-arrow .next {
-    top: 0;
+    top: -55px;
     right: 0;
   }
   .slick-arrow .prev {
-    top: 0;
-    left: 85%;
+    top: -55px;
+    left: 68%;
   }
   .heading-title {
     max-width: 100%;
     padding: 50px 0;
+    padding-bottom: 30px;
   }
 }
 
