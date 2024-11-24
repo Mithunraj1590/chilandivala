@@ -1,0 +1,11 @@
+Model Information:
+* title:	Spider
+* source:	https://sketchfab.com/3d-models/spider-b500d95f0c6f453f8bd308a6c7417179
+* author:	creator830 (https://sketchfab.com/1223shanae)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Spider" (https://sketchfab.com/3d-models/spider-b500d95f0c6f453f8bd308a6c7417179) by creator830 (https://sketchfab.com/1223shanae) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

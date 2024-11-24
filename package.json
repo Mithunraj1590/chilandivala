@@ -1,5 +1,5 @@
 {
-  "name": "chilandi",
+  "name": "creative-agency",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@studio-freight/react-lenis": "^0.0.47",
-    "bootstrap": "^5.3.3",
-    "framer-motion": "^11.11.9",
-    "gsap": "^3.12.5",
-    "next": "14.2.15",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-icomoon": "^2.5.7",
-    "sass": "^1.80.1",
-    "scss": "^0.2.4",
-    "swiper": "^11.1.14"
+    "@studio-freight/react-lenis": "^0.0.38",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.12.0",
+    "react-slick": "^0.29.0",
+    "sass": "^1.61.0",
+    "slick-carousel": "^1.8.1",
+    "three": "^0.170.0"
   }
 }
